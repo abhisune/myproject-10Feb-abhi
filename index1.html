@@ -1,2 +1,12 @@
 <h1> This is the first code file </h1>
 
+pipeline{
+    agent any
+    stages{
+        stage('clone repo')
+	{
+	steps{
+	    git 'https://github.com/sona10409/simple-python-pyinstaller-app.git'
+	}
+
+    }
